@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "QuickStart.ConsoleApp": {
+      "commandName": "Project",
+      "commandLineArgs": "--file C:\\Users\\shuai\\Desktop\\ut\\MarkdownDocument_Extract_Tests.txt"
+    }
+  }
+}
