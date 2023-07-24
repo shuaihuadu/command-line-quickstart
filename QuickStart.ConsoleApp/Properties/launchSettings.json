@@ -1,8 +1,36 @@
 {
   "profiles": {
-    "QuickStart.ConsoleApp": {
+    "QuickStart.ConsoleApp.RootCommand": {
       "commandName": "Project",
       "commandLineArgs": "--file C:\\Users\\shuai\\Desktop\\ut\\MarkdownDocument_Extract_Tests.txt"
+    },
+    "QuickStart.ConsoleApp.ReadCommand-1": {
+      "commandName": "Project",
+      "commandLineArgs": "read --file C:\\Users\\shuai\\Desktop\\ut\\MarkdownDocument_Extract_Tests.txt"
+    },
+    "QuickStart.ConsoleApp.ReadCommand-2": {
+      "commandName": "Project",
+      "commandLineArgs": "read --file C:\\Users\\shuai\\Desktop\\ut\\MarkdownDocument_Extract_Tests.txt --fgcolor red --light-mode"
+    },
+    "QuickStart.ConsoleApp.ReadCommand-3": {
+      "commandName": "Project",
+      "commandLineArgs": "read --file C:\\Users\\shuai\\Desktop\\ut\\MarkdownDocument_Extract_Tests.txt --delay 5"
+    },
+    "QuickStart.ConsoleApp.ReadCommand-4": {
+      "commandName": "Project",
+      "commandLineArgs": "read --file C:\\Users\\shuai\\Desktop\\ut\\MarkdownDocument_Extract_Tests.txt --fgcolor black --light-mode --delay 10"
+    },
+    "QuickStart.ConsoleApp.Quotes-Read": {
+      "commandName": "Project",
+      "commandLineArgs": "quotes read --file C:\\Users\\shuai\\Desktop\\ut\\MarkdownDocument_Extract_Tests.txt --delay 0"
+    },
+    "QuickStart.ConsoleApp.Quotes-Add": {
+      "commandName": "Project",
+      "commandLineArgs": "quotes add \"Hello World!\" \"ShuaiHua Du\" --file C:\\Users\\shuai\\Desktop\\ut\\MarkdownDocument_Extract_Tests.txt"
+    },
+    "QuickStart.ConsoleApp.Quotes-Delete": {
+      "commandName": "Project",
+      "commandLineArgs": "quotes delete --search-terms \"ShuaiHua Du\" --file C:\\Users\\shuai\\Desktop\\ut\\MarkdownDocument_Extract_Tests.txt"
     }
   }
 }

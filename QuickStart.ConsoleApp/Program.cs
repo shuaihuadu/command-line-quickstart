@@ -1,21 +1,6 @@
-﻿var fileOption = new Option<FileInfo?>(
-    name: "--file",
-    description: "The file to read and display on the console."
-    );
+﻿//var command = CommandBuilder.BuildRootCommand();
+//var command = CommandBuilder.BuildReadCommand();
 
-var rootCommand = new RootCommand("Sample app for System.CommandLine");
+var command = CommandBuilder.BuildQuotesCommand();
 
-rootCommand.AddOption(fileOption);
-
-rootCommand.SetHandler((file) =>
-{
-    ReadFile(file!);
-}, fileOption);
-
-await rootCommand.InvokeAsync(args);
-
-static void ReadFile(FileInfo file)
-{
-    File.ReadLines(file.FullName, Encoding.UTF8).ToList()
-        .ForEach(line => Console.WriteLine(line));
-}
+await command.InvokeAsync(args);
